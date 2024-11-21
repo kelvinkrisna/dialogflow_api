@@ -7,7 +7,7 @@ app = Flask(__name__)
 def studentNumber():
     return {'studentnumber': '200585799'}
 
-@app.route('/webhook', methods=['GET', 'POST'])
+@app.route('/webhook', methods=['POST'])
 def bagposition():
     customaddress = real_random_address()
     return customaddress

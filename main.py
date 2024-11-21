@@ -9,8 +9,4 @@ def studentNumber():
 
 @app.route('/webhook', methods=['GET'])
 def bagposition():
-    customaddress = real_random_address()
-    return customaddress
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=105)
+    customaddress = real_random_address(
